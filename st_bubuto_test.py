@@ -21,7 +21,7 @@ product_quantity = st.number_input("出荷数", min_value=0, step=1)
 if st.button("次の製品を入力"):
     if product_info and product_quantity:
         st.session_state.delivery_product.append([product_info, product_quantity])
-        st.experimental_rerun()
+        st.rerun()
 
 if st.button("伝票作成"):
     if product_info and product_quantity:
