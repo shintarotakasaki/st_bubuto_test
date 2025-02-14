@@ -1,4 +1,1 @@
 streamlit
-pymupdf
-openpyxl
-requests
